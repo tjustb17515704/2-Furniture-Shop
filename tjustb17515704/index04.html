@@ -12,53 +12,67 @@
         #top{
             height: 30px;
             padding: 5px;
-            background-color:black;
+            background-color:rgb(85, 85,85);
+        }
+        #top-1{
+            text-align: right;
+            padding: 4px;
         }
         #header{
-            height: 110px;
+            /* height: 80px; */
             padding: 5px;
-            background-color: crimson;
-        }
-        #left{
-            width:300px;
-            height:1100px;
             background-color: #ffffff;
-            float:left;
-            position: absolute;
-            left:0;
+            text-align: left;
+			/* margin: auto; */
+        }
+        #head{
+            text-align: right;
+            float: right;
+			
         }
         #center{
             height:1100px;
-            background-color:lightblue;
-        }
-        #center-1{
-            height: 500px;
-            padding: 5px;
-            clear: both;
-            background-color:cornsilk
+            background-color:rgb(221, 255, 255);
         }
         #footer{
             height: 150px;
             padding: 5px;
             clear: both;
-            background-color:darkgoldenrod
-        } 
-        h1{
+            background-color:rgb(85, 85,85);
             text-align: center;
-            color:#000000   
         }
         
     </style>    
 </head>
 <body>
-    <div id="top">搜索</div>
+    <div id="top">
+        <div id=top-1>
+            <input type="button" value="商城首页" />
+            <input type="button" value="登录/注册" />
+            <input type="button" value="购物车" />
+        </div>       
+    </div>
     
     <div id="header">
-    <h1>Furniture Shop</h1>
-    </div>
-
-<!--
-        <div id="left"></div>
+       <!-- <div id="img" style="width:260px;hight:55px; padding:0 "> -->
+            <img src="../img/title.jpg" width="260px" height="55px">
+        <!-- </div> -->
+        <div id="head">
+			<table style="margin-top:15px;margin-bottom: 15px;">
+			<tr>
+				<td><a href="#">首页</a></td>
+				<td><a href="#">商品分类</a></td>
+				<td>
+					<form >
+					<input type ="search" placeholder="请输入关键字：沙发" />
+					<input type="submit" value="搜索" />
+					</form>
+				</td> 
+			<tr>
+			</table>
+		</div>
+	</div>
+   
    
     <div id="center"><br/>
         <table>
@@ -91,13 +105,10 @@
         </table>
       
     </div>
-
-    <div id="center-1">
-    </div>
-
+    
     <div id="footer">
         版权所有-Furniture Shop
     </div>
--->
+
 </body>
 </html>
