@@ -23,7 +23,7 @@ body{
      top:40px;
  }
  #footer{
-     height: 120px;
+     height:480px;
      padding: 5px;
      clear: both;
      background-color:rgb(85, 85,85);
@@ -41,6 +41,9 @@ body{
      color: white;
      padding:5px;
  }
+ #footer h2{
+     color: white;
+ }
  #hr{
      position:relative;
      top:50px;
@@ -48,4 +51,9 @@ body{
  #img{
      position: relative;
      top:20px;
+ }
+#b_t{
+     color:white;
+     text-align: center;
+     margin: 0 auto;
  }
