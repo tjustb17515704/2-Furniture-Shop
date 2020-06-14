@@ -30,12 +30,11 @@ body{
      text-align: center;
  }
  #pic{
-     float:right;
-     width:80%;
-     height: 800px;
+     margin: 0 auto;
+     width:55%;
+     height:550px;
      position: relative; 
-     top:50px;
-     right:30px;
+     top:25px;
  }
 
  #footer p{
@@ -58,6 +57,3 @@ body{
      text-align: center;
      margin: 0 auto;
  }
-
- .list li {float: left; display:inline; margin:5px;}
-

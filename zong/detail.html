@@ -11,28 +11,35 @@
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
-
-  <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-  <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-
-
-  <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
   <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="style.css">
+  
   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+  
+  <style>
+	  center{
+	    font-size:25 px;
+	  }
+	  img{
+	    width: 300px;
+	    height: 200px;
+	    margin-left: 4px;
+	    margin-bottom: 3px;
+	    margin-right: 4px;
+	  }
+  </style>
 </head>
 <body>
   <div id="top">
@@ -44,7 +51,10 @@
             <a href="#">Furniture Shop</a>
         </h1>
       
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+			<span class="am-sr-only">导航切换</span>
+			<span class="am-icon-bars"></span>
+		</button>
       
         <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
           <ul class="am-nav am-nav-pills am-topbar-nav">
@@ -91,76 +101,52 @@
 </div>  
 
 <div id="center">
-   
-    <div data-am-widget="slider" id="pic" class="am-slider am-slider-a4" data-am-slider='{"directionNav":false}' >
-      <title></title>
-      <style type="text/css">
-        .list li {float:left; display:inline; margin:5px;}
-      </style>
-      </head>
-      <body>
+	<div style="position: relative;left: 50%;float: left;">
+    <div data-am-widget="slider" id="pic" class="am-slider am-slider-a4"  style="position: relative;left: -60%;">
       <div>
-        <span><a href="#">推荐商品</a></span>|<span><a href="#">Pruduct</a></span>
+        <span><a href="#">推荐商品</a></span>
+        <span><a href="#">Pruduct</a></span>
       </div>
       <ul class="list">
-
-      <head>
-<style type="text/css">
-center{
-  margin: 0;
-  padding: 0;
-  background: antiquewhite;
-}
-img{
-  width: 300px;
-  height: 200px;
-  margin-left: 4px;
-  margin-bottom: 3px;
-  margin-right: 4px;
-}
-</style>
-        <li>
-           <td valign="top"><img src="1.jpg" align" width="300" height="300" /></td> 
-          <p><center>北欧实木家用主卧日式简约双人床<center></p><p><center>销售价:￥6799</center></p>
-        </li>
-        <li>
-          <td valign="top"><img src="2.jpg" align" width="300" height="200"/></td>  
-          <p><center>北欧现代简约主卧双人布艺床<center></p><p></center>销售价:￥5999</center></p>
-        </li>
-        <li>
-          <td valign="top"><img src="3.jpg" align" width="300" height="200" /></td>
-          <p><center>韩式双人实木美式简约床<center></p><p><center>销售价:￥6999</center></p>
-        </li>
-        <li>
-          <td valign="top"><img src="4.jpg" align" width="300" height="200" /></td> 
-         <p><center>北欧简约现代床铺高厢储物双人床<center></p><p><center>销售价:￥6900</center></p>
-       </li>
-       <li>
-         <td valign="top"><img src="5.jpg" align" width="300" height="200" /></td>  
-         <p><center>意式真皮双人床极简风<center></p><p><center>销售价:￥6899</center></p>
-       </li>
-       <li>
-         <td valign="top"><img src="6.jpg" align" width="300" height="200" /></td>
-         <p><center>北欧简约现代布艺双人床<center></p><p><center>销售价:￥7999</center></p>
-       </li>
-        <style>
-          center{
-            font-size:25 px;
-          }
-          ￥{
-            color: red;
-            margin: 5 5 px;
-          }
-
-        </style>
+			<li>
+				<td valign="top"><a href="#"><img src="../img/1.jpg" align" width="300" height="300" /></a></td> 
+				<a href="#"><p><center>北欧实木家用主卧日式简约双人床</center></p></a>
+				<a href="#"><p><center>销售价:￥6799</center></p></a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="../img/2.jpg" align" width="300" height="200"/></a></td>  
+				<a href="#"><p><center>北欧现代简约主卧双人布艺床<center></p></a>
+				<a href="#"><p></center>销售价:￥5999</center></p></a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="../img/3.jpg" align" width="300" height="200" /></a></td>
+				<a href="#"><p><center>韩式双人实木美式简约床<center></p></a>
+				<a href="#"><p><center>销售价:￥6999</center></p></a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="../img/4.jpg" align" width="300" height="200" /></a></td> 
+				<a href="#"><p><center>北欧简约现代床铺高厢储物双人床<center></p></a>
+				<a href="#"><p><center>销售价:￥6900</center></p></a>
+			</li>
+		   
+			<li>
+				<td valign="top"><a href="#"><img src="../img/5.jpg" align" width="300" height="200" /></a></td>  
+				<a href="#"><p><center>意式真皮双人床极简风<center></p></a>
+				<a href="#"><p><center>销售价:￥6899</center></p></a>
+			</li>
+		   
+			<li>
+				<td valign="top"><a href="#"><img src="../img/6.jpg" align" width="300" height="200" /></a></td>
+				<a href="#"><p><center>北欧简约现代布艺双人床<center></p></a>
+				<a href="#"><p><center>销售价:￥7999</center></p></a>
+			</li>
       </ul>
-      </td> 
-      </table>
-        </div>
+    </div>
 </div>
-
-
-
+</div>
 <div id="footer">
   <div id="bottom">
     <table id="b_t" width="60%" height="10px" >
@@ -207,15 +193,5 @@ img{
 
 </div>
 
-
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="assets/js/jquery.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-<script src="assets/js/amazeui.min.js"></script>
 </body>
 </html>
