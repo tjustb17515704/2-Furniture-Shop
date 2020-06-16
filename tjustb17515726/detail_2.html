@@ -11,28 +11,23 @@
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
-
-  <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-  <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-
-
-  <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
   <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="detail_style.css">
+  
   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+
 </head>
 <body>
   <div id="top">
@@ -44,7 +39,10 @@
             <a href="#">Furniture Shop</a>
         </h1>
       
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+			<span class="am-sr-only">导航切换</span>
+			<span class="am-icon-bars"></span>
+		</button>
       
         <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
           <ul class="am-nav am-nav-pills am-topbar-nav">
@@ -62,10 +60,10 @@
                 <li><a href="#">衣柜</a></li>
                 <li class="am-divider"></li>
                 <li class="am-dropdown-header">装饰品</li>
-                <li><a href="#">花盆</a></li>
-                <li><a href="#">时钟</a></li>
-                <li><a href="#">储物盒</a></li>
+                <li><a href="#">花瓶</a></li>
+                <li><a href="#">吊灯</a></li>
                 <li><a href="#">镜子</a></li>
+                <li><a href="#">梳妆台</a></li>
                 <li class="am-divider"></li>
               </ul>
             </li>
@@ -91,77 +89,91 @@
 </div>  
 
 <div id="center">
-   
-    <div data-am-widget="slider" id="pic" class="am-slider am-slider-a4" data-am-slider='{"directionNav":false}' >
-      <title></title>
-      <style type="text/css">
-        .list li {float:left; display:inline; margin:5px;}
-      </style>
-      </head>
-      <body>
-      <div>
-        <span><a href="#">推荐商品</a></span>|<span><a href="#">Pruduct</a></span>
+  <div id="bg">
+    <div>
+        <span><a href="#">热 卖 商 品</a></span>
       </div>
       <ul class="list">
-
-      <head>
-<style type="text/css">
-center{
-  margin: 0;
-  padding: 0;
-  background: antiquewhite;
-}
-img{
-  width: 300px;
-  height: 200px;
-  margin-left: 4px;
-  margin-bottom: 3px;
-  margin-right: 4px;
-}
-</style>
-        <li>
-           <td valign="top"><img src="1.jpg" align" width="300" height="300" /></td> 
-          <p><center>家用椅靠背现代简约塑料凳子<center></p><p><center>销售价:￥41</center></p>
-        </li>
-        <li>
-          <td valign="top"><img src="2.jpg" align" width="300" height="200"/></td>  
-          <p><center>靠背家用经济型实木椅子<center></p><p></center>销售价:￥68</center></p>
-        </li>
-        <li>
-          <td valign="top"><img src="3.jpg" align" width="300" height="200" /></td>
-          <p><center>a字椅简约书桌凳子<center></p><p><center>销售价:￥119</center></p>
-        </li>
-        <li>
-          <td valign="top"><img src="4.jpg" align" width="300" height="200" /></td> 
-         <p><center>铁艺y字椅子家用仿实木茶椅<center></p><p><center>销售价:￥90</center></p>
-       </li>
-       <li>
-         <td valign="top"><img src="5.jpg" align" width="300" height="200" /></td>  
-         <p><center>铁艺椅子餐厅桌椅<center></p><p><center>销售价:￥275</center></p>
-       </li>
-       <li>
-         <td valign="top"><img src="6.jpg" align" width="300" height="200" /></td>
-         <p><center>IKEA菲亚伯会议椅转椅办公椅<center></p><p><center>销售价:￥1449</center></p>
-       </li>
-        <style>
-          center{
-            font-size:25 px;
-          }
-          ￥{
-            color: red;
-            margin: 5 5 px;
-          }
-
-        </style>
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/03椅子/1.jpg"  /></a></td> 
+				<a href="#">
+          <p><center>现代简约办公室伊姆斯塑料凳子</center></p>
+          <p><center>销售价:￥41</center></p>
+        </a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/03椅子/2.jpg" /></a></td>  
+				<a href="#">
+          <p><center>家用经济型北欧蝴蝶餐椅实木<center></p>
+          <p></center>销售价:￥68</center></p>
+        </a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/03椅子/3.jpg"/></a></td>
+				<a href="#">
+          <p><center>家用北欧a字椅简约书桌凳子桌椅<center></p>
+          <p><center>销售价:￥119</center></p>
+        </a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/03椅子/4.jpg"  /></a></td> 
+				<a href="#">
+          <p><center>铁艺y字椅子家用仿实木茶椅<center></p>
+          <p><center>销售价:￥90</center></p>
+        </a>
+			</li>
+		   
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/03椅子/5.jpg" /></a></td>  
+				<a href="#">
+          <p><center>铁艺椅子软包简约餐凳家用<center></p>
+          <p><center>销售价:￥275</center></p>
+        </a>
+			</li>
+		   
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/03椅子/6.jpg"  /></a></td>
+				<a href="#">
+          <p><center>IKEA菲亚伯会议椅转椅<center></p>
+          <p><center>销售价:￥1449</center></p>
+        </a>
+			</li>
       </ul>
-      </td> 
-      </table>
-        </div>
+   </div>
+  </div>
+  <div id="page" >
+    <div id="page_1">
+    <ul data-am-widget="pagination"
+    class="am-pagination am-pagination-default">
+  
+    <li class="am-pagination-first ">
+      <a href="#">第一页</a>
+    </li>
+  
+    <li class="am-pagination-prev ">
+      <a href="#">上一页</a>
+    </li>
+          <li class="am-active">
+            <a href="#" class="am-active">1</a>
+          </li>
+    <li class="am-pagination-next ">
+      <a href="#">下一页</a>
+    </li>
+  
+    <li class="am-pagination-last ">
+      <a href="#">最末页</a>
+    </li>
+  </ul>
+
+</div>
+  
+   </div>
 </div>
 
-
-
-<div id="footer">
+<div id="footer" style="margin: auto;">
   <div id="bottom">
     <table id="b_t" width="60%" height="10px" >
      <tr>
@@ -207,15 +219,5 @@ img{
 
 </div>
 
-
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="assets/js/jquery.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-<script src="assets/js/amazeui.min.js"></script>
 </body>
 </html>
