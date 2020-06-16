@@ -13,28 +13,17 @@ body{
      font-family:黑体;
  }
  #center{
-     height:1080px;
+     height:800px;
      background-color:rgb(240,240,240);
- }
- #center p{
-     font-size: 40px;
-     position: relative;
      text-align: center;
-     top:40px;
  }
+
  #footer{
      height:480px;
      padding: 5px;
      clear: both;
      background-color:rgb(85, 85,85);
      text-align: center;
- }
- #pic{
-     margin: 0 auto;
-     width:65%;
-     height: 600px;
-     position: relative; 
-     top:25px;
  }
 
  #footer p{
@@ -57,4 +46,28 @@ body{
      text-align: center;
      margin: 0 auto;
  }
- 
+
+ .list li {float:left; display:inline; margin:10px;}
+ center{
+    font-size:25 px;
+  }
+  img{
+    width: 300px;
+    height: 200px;
+  }
+
+#bg{
+    width: 80%;
+    height: 700px;
+    background-color:rgb(245,245,245);
+    margin: 0 auto;
+    position: relative;
+    top:30px;
+}
+#page #page_1 ul{
+    padding-left:65px;
+}
+#page #page_1{
+    margin: auto;
+    width: 600px;
+}
