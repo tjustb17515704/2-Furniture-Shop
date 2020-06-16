@@ -11,28 +11,23 @@
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
-
-  <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-
-  <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-
-
-  <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
   <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
   <meta name="msapplication-TileColor" content="#0e90d2">
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
-  <link rel="stylesheet" href="index_style.css">
+  <link rel="stylesheet" href="detail_style.css">
+  
   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/amazeui.min.js"></script>
+
 </head>
 <body>
   <div id="top">
@@ -44,7 +39,10 @@
             <a href="#">Furniture Shop</a>
         </h1>
       
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+			<span class="am-sr-only">导航切换</span>
+			<span class="am-icon-bars"></span>
+		</button>
       
         <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
           <ul class="am-nav am-nav-pills am-topbar-nav">
@@ -62,10 +60,10 @@
                 <li><a href="#">衣柜</a></li>
                 <li class="am-divider"></li>
                 <li class="am-dropdown-header">装饰品</li>
-                <li><a href="#">花盆</a></li>
-                <li><a href="#">时钟</a></li>
-                <li><a href="#">储物盒</a></li>
+                <li><a href="#">花瓶</a></li>
+                <li><a href="#">吊灯</a></li>
                 <li><a href="#">镜子</a></li>
+                <li><a href="#">梳妆台</a></li>
                 <li class="am-divider"></li>
               </ul>
             </li>
@@ -91,68 +89,91 @@
 </div>  
 
 <div id="center">
-   
-    <div data-am-widget="slider" id="pic" class="am-slider am-slider-a4" data-am-slider='{"directionNav":false}' >
-        <ul class="am-slides">
-            <li>
-              <img src="img/sofa-1.jpg" height="550px">
-            </li>
-            <li>
-              <img src="img/bed.jpg"  height="550px">
-            </li>
-            <li>
-              <img src="img/table.jpg"  height="550px">
-            </li>
-            <li>
-              <img src="img/bed-1.jpg"  height="550px">
-            </li>
-            <li>
-                <img src="img/table-1.jpg"  height="550px">
-            </li>
-        </ul>
-        </div>
+  <div id="bg">
+    <div>
+        <span><a href="#">热 卖 商 品</a></span>
+      </div>
+      <ul class="list">
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/04沙发/沙发1.jpg"  /></a></td> 
+				<a href="#">
+          <p><center>北欧风格简约布艺沙发组合</center></p>
+          <p><center>销售价:￥3180</center></p>
+        </a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/04沙发/沙发2.jpg" /></a></td>  
+				<a href="#">
+          <p><center>北欧ins风现代简约沙发</center></p>
+          <p></center>销售价:￥2020</center></p>
+        </a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/04沙发/沙发3.jpg"/></a></td>
+				<a href="#">
+          <p><center>北欧小户型简约现代沙发</center></p>
+          <p><center>销售价:￥4980</center></p>
+        </a>
+			</li>
+			
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/04沙发/沙发4.jpg"  /></a></td> 
+				<a href="#">
+          <p><center>粉色北欧小户型ins风布艺沙发</center></p>
+          <p><center>销售价:￥1680</center></p>
+        </a>
+			</li>
+		   
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/04沙发/沙发5.jpg" /></a></td>  
+				<a href="#">
+          <p><center>轻奢风布艺沙发小户型北欧现代</center></p>
+          <p><center>销售价:￥5700</center></p>
+        </a>
+			</li>
+		   
+			<li>
+				<td valign="top"><a href="#"><img src="detail_img/04沙发/沙发6.jpg"  /></a></td>
+				<a href="#">
+          <p><center>沙发布艺小户型简约</center></p>
+          <p><center>销售价:￥4350</center></p>
+        </a>
+			</li>
+      </ul>
+   </div>
+  </div>
+  <div id="page" >
+    <div id="page_1">
+    <ul data-am-widget="pagination"
+    class="am-pagination am-pagination-default">
+  
+    <li class="am-pagination-first ">
+      <a href="#">第一页</a>
+    </li>
+  
+    <li class="am-pagination-prev ">
+      <a href="#">上一页</a>
+    </li>
+          <li class="am-active">
+            <a href="#" class="am-active">1</a>
+          </li>
+    <li class="am-pagination-next ">
+      <a href="#">下一页</a>
+    </li>
+  
+    <li class="am-pagination-last ">
+      <a href="#">最末页</a>
+    </li>
+  </ul>
 
-        <hr id="hr" data-am-widget="divider"  class="am-divider am-divider-default" />
-        <p style="font-family: 汉仪菱心体简;">2020夏季新品上市</p>
-
-        <div id=img>
-          <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2
-          am-avg-md-3 am-avg-lg-4 am-gallery-imgbordered" data-am-gallery="{  }" >
-              <li>
-                <div class="am-gallery-item">
-                    <a href="#">
-                      <img src="img/book.jpg" />   
-                    </a>
-                </div>
-              </li>
-              <li>
-                <div class="am-gallery-item">
-                    <a href="#">
-                      <img src="img/FM.jpg" />
-                    </a>
-                </div>
-              </li>
-              <li>
-                <div class="am-gallery-item">
-                    <a href="#">
-                      <img src="img/sofa.jpg"/>
-                    </a>
-                </div>
-              </li>
-              <li>
-                <div class="am-gallery-item">
-                    <a href="#">
-                      <img src="img/table-2.jpg" />
-                    </a>
-                </div>
-              </li>
-          </ul>
-        </div>
+</div>
+  
+   </div>
 </div>
 
-
-
-<div id="footer">
+<div id="footer" style="margin: auto;">
   <div id="bottom">
     <table id="b_t" width="60%" height="10px" >
      <tr>
@@ -198,15 +219,5 @@
 
 </div>
 
-
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="assets/js/jquery.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-<script src="assets/js/amazeui.min.js"></script>
 </body>
 </html>
