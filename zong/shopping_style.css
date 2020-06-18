@@ -261,7 +261,6 @@ font-size: 30px;
     float: right;
     line-height: 60px;
     font-size: 19px;
-    background: #FF4B00;
     color: white;
 }
 #sum_area #pay_amout{
@@ -272,6 +271,11 @@ font-size: 30px;
     line-height: 60px;
     font-size: 16px;
     color:#FF4B00 ;
+}
+#btn{
+    width: 250px;
+    height:60px;
+    background:#FF4B00 ;
 }
 #sum_area #pay_amout #price_num{
     width:100px;
